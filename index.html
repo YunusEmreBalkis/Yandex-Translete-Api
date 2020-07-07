@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body >
+
+
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-12" style="background-color:yellow; text-align: center;">
+               <h1 style="margin-top: 40px; margin-bottom: 40px; color:darkblue;">
+                Yunus Translate
+               </h1>
+
+            </div>
+            <div class="col-12" style="background-image: url(images/1.jpg); height: 550px;">
+                <div class="row" >
+                    <div class="col-md-6">
+                        <div class="card" style="margin-top: 20px;">
+                            <div class="card-header">
+                            
+                            </div>
+                            <div class="card-body" >
+                                <form id="translate-form">
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col-6">
+                                                <label >Lütfen çevirmek istediğiniz kelimeyi girin</label>
+                                                <input type="text" name = "word" id = "word" value ="Nasılsın" class="form-control"  >
+                                            </div>
+                                            <div class="col-6">
+                                                <label >Lütfen çevirmek istediğiniz dili girin</label>
+                                                <select class="custom-select" id = "language"style="background-color: rgb(106, 233, 56);">
+                                                    
+                                                    <option value="en" style="color: black;">İngilizce</option>
+                                                    <option value="es"style="color: black;">İspanyolca</option>
+                                                    <option value="de"style="color: black;">Almanca</option>
+                                                    <option value="ja" style="color: black;">Japonca</option>
+                                                  </select>
+                                            </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Çevir</button>
+                                        </div>
+                                          
+
+                                        </div>
+                                      
+                                      
+                                    </div>
+                                </form>    
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card" style="margin-top: 20px;">
+                            <div class="card-header">
+                              <span id = "outputLanguage">İspanyolca</span>
+                            </div>
+                            <div class="card-body">
+                                <form id="translate-form">
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label >Çevirmek istediğiniz kelime</label>
+                                                <h5><span id = "outputWord" style = "color :red;"> How are you ?</span></h5>
+                                            </div>
+                                            <div class="col">
+                                              <img src="images/en.png"  id = "outputImage" style="width: 105px; height: 105px; margin-left: 80px;">
+                                            </div>
+                                        </div>
+                                      
+                                      
+                                    </div>
+                                </form>    
+                            </div>
+                          </div>
+                    </div>
+            </div>
+            
+           
+            
+
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="ui.js"></script>
+    <script src="translate.js"></script>
+
+    <script src="app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
